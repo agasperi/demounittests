@@ -1,11 +1,14 @@
 package com.globalr.demounittests.deposito;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.Id;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Entity
+//@Entity
+@Document(collection = "deposit")
 public class DepositoRequestDTO {
 
     @Id

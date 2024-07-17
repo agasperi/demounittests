@@ -3,9 +3,11 @@ package com.globalr.demounittests.deposito;
 import com.globalr.demounittests.Cuenta.CuentaDAO;
 import com.globalr.demounittests.Cuenta.CuentaRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Service
 @RequiredArgsConstructor
 public class DepositoServiceImpl implements DepositoService{
 

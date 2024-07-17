@@ -1,11 +1,14 @@
 package com.globalr.demounittests.Cuenta;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
+//import jakarta.persistence.Entity;
+//import jakarta.persistence.Id;
 import lombok.Data;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
-@Entity
+//@Entity
+@Document(collection = "account")
 public class CuentaDAO {
 
     @Id
